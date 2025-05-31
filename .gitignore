@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+.env
+
+# Poetry cache e lock (cache opcional, lock geralmente versiona)
+.cache/pypoetry/
+
+# Django
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# VSCode
+.vscode/
+
