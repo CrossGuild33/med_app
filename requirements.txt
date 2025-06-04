@@ -1,0 +1,18 @@
+Django>=4.2
+djangorestframework>=3.14
+psycopg2-binary>=2.9
+python-dotenv>=1.0
+gunicorn>=21.2
+drf-yasg>=1.21
+whitenoise>=6.6
+
+# Testes
+pytest>=8.2
+pytest-django>=4.8
+djangorestframework-simplejwt>=5.3
+
+# Para lidar com CORS (se necessário)
+django-cors-headers>=4.3
+
+# Para integração futura com APIs externas, se desejar
+requests>=2.31
