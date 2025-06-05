@@ -3,7 +3,7 @@
 
 ## 🐞 Erros Encontrados
 
-- ** Conexão externa com banco AWS:**
+- **Conexão externa com banco AWS:**
   Ao utilizar meu IP na configuração do banco AWS, bloqueei o acesso que não fosse local ao banco. Utilizei IP 0.0.0.0 padrão para possibilitar o acesso publico.
 
 - **Conexão com banco AWS RDS:**  
