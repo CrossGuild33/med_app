@@ -3,6 +3,9 @@
 
 ## 🐞 Erros Encontrados
 
+- ** Conexão externa com banco AWS:**
+  Ao utilizar meu IP na configuração do banco AWS, bloqueei o acesso que não fosse local ao banco. Utilizei IP 0.0.0.0 padrão para possibilitar o acesso publico.
+
 - **Conexão com banco AWS RDS:**  
   Problema nas permissões do grupo de segurança (Security Group) bloqueando acessos externos. A solução foi ajustar as regras para liberar a porta 5432 para meu IP. Ainda assim, houve erro no `makemigrate` após a tentativa de implementação do banco na AWS.
 
