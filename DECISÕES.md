@@ -27,7 +27,6 @@
 - Gerenciamento de variáveis sensíveis com o pacote **`python-dotenv`**.
 - Definição de padrões de API com respostas em **JSON**, seguindo boas práticas REST.
 - Na configuração do SecurityGroup na AWS, utilizei iP 0.0.0.0 para permitir o acesso público.
-- No primeiro deploy, não deixei escrito no requirements.txt o plugin `psycopg>=2.9`, ao invés disso utilizei o `psycopg-binary>=2.9`, sendo o primeiro uma opção mais profissional, por sua segurança, escalabilidade, etc., principalmente após a integração do banco de dados com a AWS.
 
 ## 🚀 Melhorias Propostas
 
