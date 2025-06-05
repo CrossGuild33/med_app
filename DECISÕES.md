@@ -3,8 +3,11 @@
 
 ## 🐞 Erros Encontrados
 
+- **Necessidade de um valor:**
+  Ao configurar o models da app "profissionais", houve um erro no `makemigrate`, pois nos campos exigidos não é aceito valores nulos. Para resolver pelo menos no início da fase de desenvolvimento, optei por um valor default "Não informado".
+
 - **Conexão externa com banco AWS:**
-  Ao utilizar meu IP na configuração do banco AWS, bloqueei o acesso que não fosse local ao banco. Utilizei IP 0.0.0.0 padrão para possibilitar o acesso publico.
+  Ao utilizar meu IP na configuração do security group do banco AWS, bloqueei o acesso que não fosse local ao banco. Utilizei IP 0.0.0.0 padrão para possibilitar o acesso publico. Com isso resolvi o problema que estava havendo no `makemigrate`
 
 - **Conexão com banco AWS RDS:**  
   Problema nas permissões do grupo de segurança (Security Group) bloqueando acessos externos. A solução foi ajustar as regras para liberar a porta 5432 para meu IP. Ainda assim, houve erro no `makemigrate` após a tentativa de implementação do banco na AWS.
@@ -23,6 +26,7 @@
 - Pipeline de **CI/CD com GitHub Actions**, automatizando os processos de testes e deploy.
 - Gerenciamento de variáveis sensíveis com o pacote **`python-dotenv`**.
 - Definição de padrões de API com respostas em **JSON**, seguindo boas práticas REST.
+- Na configuração do SecurityGroup na AWS, utilizei iP 0.0.0.0 para permitir o acesso público. 
 
 ## 🚀 Melhorias Propostas
 
@@ -33,3 +37,4 @@
 - Expandir a integração com a **API da Asaas**, incluindo funcionalidades de reembolso, cancelamento e relatórios financeiros.
 - Implantar sistemas de **monitoramento e observabilidade**, como **Sentry, Prometheus e Grafana**, para detecção proativa de erros.
 - Refatorar alguns endpoints para maior desacoplamento e escalabilidade futura.
+- Na SecurityGroup da AWS utilizei um IP 0.0.0.0, há necessidade de usar opções mais seguras. 
