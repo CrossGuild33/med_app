@@ -36,5 +36,4 @@
 - Aplicar melhorias de segurança, como **rate limiting**, proteção contra brute force e **OAuth2**.
 - Expandir a integração com a **API da Asaas**, incluindo funcionalidades de reembolso, cancelamento e relatórios financeiros.
 - Implantar sistemas de **monitoramento e observabilidade**, como **Sentry, Prometheus e Grafana**, para detecção proativa de erros.
-- Refatorar alguns endpoints para maior desacoplamento e escalabilidade futura.
 - Na SecurityGroup da AWS utilizei um IP 0.0.0.0, há necessidade de usar opções mais seguras. 
