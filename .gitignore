@@ -1,6 +1,6 @@
 # Virtual environment
 venv/
-.env
+ venv
 
 # Poetry cache e lock (cache opcional, lock geralmente versiona)
 .cache/pypoetry/
@@ -19,3 +19,4 @@ __pycache__/
 # VSCode
 .vscode/
 
+.env

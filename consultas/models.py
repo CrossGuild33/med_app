@@ -7,4 +7,4 @@ class Consulta(models.Model):
     horario = models.TimeField()
 
     def __str__(self):
-        return f"{self.paciente} com {self.profissional.nome} em {self.data} às {self.horario}"
+        return f"{self.paciente} com {self.profissional.nome_social} em {self.data} às {self.horario}"
