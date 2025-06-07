@@ -43,7 +43,7 @@ jobs:
         echo "DB_NAME=${{ secrets.DB_NAME }}" >> $GITHUB_ENV
         echo "DB_USER=${{ secrets.DB_USER }}" >> $GITHUB_ENV
         echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> $GITHUB_ENV
-        echo "DB_HOST=postgres" >> $GITHUB_ENV
+        echo "DB_HOST=database-1.c780660qwfkf.us-east-2.rds.amazonaws.com" >> $GITHUB_ENV
         echo "DB_PORT=5432" >> $GITHUB_ENV
 
     - name: Wait for PostgreSQL
