@@ -57,7 +57,7 @@ jobs:
         DB_NAME: ${{ secrets.DB_NAME }}
         DB_USER: ${{ secrets.DB_USER }}
         DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-        DB_HOST: postgres
+        DB_HOST: database-1.c780660qwfkf.us-east-2.rds.amazonaws.com
         DB_PORT: 5432
       run: |
         python manage.py migrate
@@ -67,7 +67,7 @@ jobs:
         DB_NAME: ${{ secrets.DB_NAME }}
         DB_USER: ${{ secrets.DB_USER }}
         DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-        DB_HOST: postgres
+        DB_HOST: database-1.c780660qwfkf.us-east-2.rds.amazonaws.com
         DB_PORT: 5432
       run: |
         python manage.py test
