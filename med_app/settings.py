@@ -151,3 +151,4 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 X_FRAME_OPTIONS = 'DENY'
 
+print("Conectando ao banco em:", os.getenv("DB_HOST"))
