@@ -33,14 +33,17 @@ pip install -r requirements.txt
 4. **Configure o arquivo `.env`:**
 
 ```env
-SECRET_KEY=seu_secret_key
+SECRET_KEY=sua_chave_secreta_local
 DEBUG=True
-DB_NAME=medapp_db
-DB_USER=meduser
-DB_PASSWORD=senha
+
+DB_NAME=nome_do_seu_banco
+DB_USER=seu_usuario
+DB_PASSWORD=sua_senha
 DB_HOST=localhost
 DB_PORT=5432
+
 ```
+✅ Em produção, essas variáveis são definidas automaticamente via GitHub Secrets no pipeline CI/CD.
 
 5. **Execute as migrações:**
 
